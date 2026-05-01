@@ -46,4 +46,4 @@ This portfolio is continuously evolving as I keep learning and developing new ga
 
 ## 📫 Contact
 
-(You can add your email or LinkedIn here later)
+Email: alu0101225845@ull.edu.es
