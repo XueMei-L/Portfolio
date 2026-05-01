@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuemei Lin - Game Development Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#3498db',
+                        lightBlue: 'rgba(236, 240, 248, 0.85)',
+                        lightPurple: 'rgba(244, 240, 248, 0.85)'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .divider-line {
+                height: 2px;
+                background: linear-gradient(to right, #3498db, #9b59b6);
+                width: 120px;
+                margin: 1rem auto;
+                border-radius: 2px;
+            }
+            .card-shadow {
+                box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            }
+            .icon-circle {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+                flex-shrink: 0;
+                border: 2px solid #fff;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+            .bg-pattern {
+                background-image: url('./imgs/background.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+</head>
+<body class="bg-pattern text-gray-800 min-h-screen flex flex-col">
+    <!-- Overlay to keep text readable over background -->
+    <div class="absolute inset-0 bg-white/60 -z-10"></div>
+
+    <!-- Top Navigation -->
+    <header class="bg-primary/90 text-white py-4 shadow-md relative z-10">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-2xl font-bold">MY GAME DEVELOPMENT PORTFOLIO</h1>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-12 relative z-10">
+        <!-- About Me Section -->
+        <section class="text-center mb-12 md:mb-16 bg-white/70 p-6 rounded-xl backdrop-blur-sm">
+            <h2 class="text-3xl font-bold mb-3">HI, I AM XUEMEI LIN</h2>
+            <div class="space-y-2 text-gray-600">
+                <p class="flex items-center justify-center gap-2">
+                    <i class="fa fa-graduation-cap text-secondary"></i>
+                    Graduated from University of La Laguna
+                </p>
+                <p class="flex items-center justify-center gap-2">
+                    <i class="fa fa-code text-secondary"></i>
+                    Major in Computer Science
+                </p>
+                <p class="flex items-center justify-center gap-2">
+                    <i class="fa fa-globe text-secondary"></i>
+                    Chinese Nationality | Based in Spain
+                </p>
+            </div>
+            <div class="divider-line"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="grid md:grid-cols-2 gap-8 md:gap-12">
+            <!-- 2D Games Section - Left -->
+            <div class="bg-lightBlue rounded-xl p-6 md:p-8 card-shadow backdrop-blur-sm transition-transform hover:scale-[1.01]">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fa fa-gamepad text-3xl text-secondary"></i>
+                    <h3 class="text-2xl font-bold">2D GAMES</h3>
+                </div>
+                <ul class="space-y-4 text-gray-700">
+                    <!-- Magic Forest Project -->
+                    <li class="p-4 bg-white/60 rounded-lg flex items-center gap-4 backdrop-blur-sm">
+                        <img 
+                            src="./imgs/gameIcon1.png" 
+                            alt="Magic Forest Icon" 
+                            class="icon-circle"
+                        >
+                        <div class="flex-1">
+                            <p class="font-medium text-lg">Magic Forest</p>
+                            <p class="text-sm text-gray-500 mt-1 mb-2">A magical 2D adventure game set in an enchanted forest world</p>
+                            <div class="flex flex-wrap gap-3 text-sm">
+                                <a href="https://github.com/XueMei-L/MagicForest.git" target="_blank" class="flex items-center gap-1 text-secondary hover:underline">
+                                    <i class="fa fa-github"></i> View on GitHub
+                                </a>
+                                <a href="https://youtu.be/6PL2ai1dkgI" target="_blank" class="flex items-center gap-1 text-red-500 hover:underline">
+                                    <i class="fa fa-youtube-play"></i> Watch Demo
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="p-3 bg-white/60 rounded-lg backdrop-blur-sm">
+                        <p class="font-medium">Project 2 - Coming Soon</p>
+                        <p class="text-sm text-gray-500 mt-1">GitHub repository and YouTube demo link will be added here</p>
+                    </li>
+                    <li class="p-3 bg-white/60 rounded-lg backdrop-blur-sm">
+                        <p class="font-medium">More Projects - In Progress</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3D Games Section - Right -->
+            <div class="bg-lightPurple rounded-xl p-6 md:p-8 card-shadow backdrop-blur-sm transition-transform hover:scale-[1.01]">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fa fa-cube text-3xl text-[#9b59b6]"></i>
+                    <h3 class="text-2xl font-bold">3D GAMES</h3>
+                </div>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="p-3 bg-white/60 rounded-lg backdrop-blur-sm">
+                        <p class="font-medium">Project 1 - Coming Soon</p>
+                        <p class="text-sm text-gray-500 mt-1">GitHub repository and YouTube demo link will be added here</p>
+                    </li>
+                    <li class="p-3 bg-white/60 rounded-lg backdrop-blur-sm">
+                        <p class="font-medium">Project 2 - Coming Soon</p>
+                        <p class="text-sm text-gray-500 mt-1">GitHub repository and YouTube demo link will be added here</p>
+                    </li>
+                    <li class="p-3 bg-white/60 rounded-lg backdrop-blur-sm">
+                        <p class="font-medium">More Projects - In Progress</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/80 text-white py-4 text-center text-sm mt-8 relative z-10 backdrop-blur-sm">
+        <p>© 2026 Xuemei Lin | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
