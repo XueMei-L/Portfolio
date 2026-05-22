@@ -56,9 +56,9 @@
         }
     </style>
 </head>
-<body class="bg-pattern text-gray-800 min-h-screen flex flex-col">
-    <!-- Overlay to keep text readable over background -->
-    <div class="absolute inset-0 bg-white/60 -z-10"></div>
+<body class="bg-pattern text-gray-800 min-h-screen flex flex-col relative">
+    <!-- 白色半透明遮罩 - 现在完整覆盖整个背景 -->
+    <div class="fixed inset-0 bg-white/60 -z-10"></div>
 
     <!-- Top Navigation -->
     <header class="bg-primary/90 text-white py-4 shadow-md relative z-10">
